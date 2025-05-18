@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #071a28;
+  color: white;
+  text-align: center;
+}
+h1 {
+  font-family: times;
+  font-size: 80px;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background-color: transparent;
+}
+h2 {
+  text-align: right;
+  font-family: cursive;
+  font-size: 60px;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+  background-color: transparent;
+}
+
+.s1 {
+  background-image: url("https://cdn.codechef.com/download/Contest+images/ANTEST/landing+page.jpg");
+}
+
+header p {
+  font-size: 18px;
+  text-align: right;
+  margin-left: 30rem;
+  margin-bottom: 7rem;
+  padding-right: 1rem;
+}
+
+.table-head {
+  background-color: red;
+  color: white;
+  height: 3rem;
+}
+.table-data {
+  border-collapse: collapse;
+  border: 1px solid red;
+  box-sizing: border-box;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: left;
+  width: 70vw;
+}
+.table-img {
+  border-collapse: collapse;
+  border: 1px solid red;
+  box-sizing: border-box;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  width: 70vw;
+}
+
+footer {
+  height: 4rem;
+  background-color: #4f2d18;
+  font-size: 18px;
+  padding: 1rem;
+}
+#url {
+  margin: 4rem auto;
+}
+div#url a {
+  color: white;
+  font-size: 18px;
+}
