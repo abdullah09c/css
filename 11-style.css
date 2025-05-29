@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box1{
+    background-color: green;
+    height: 440px;
+    width: 720px;
+    border: 3px solid black;
+}
+
+.box2{
+    background-color: red;
+    width: 100%;
+    padding: 14px;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
