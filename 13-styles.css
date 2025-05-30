@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: gray;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+  height: 75rem;
+  width: 95vw;
+  margin: 0px auto;
+  padding: 50px;
+  min-height: calc(100vh - 100px);
+}
+
+header {
+  text-align: center;
+  line-height: 2;
+}
+
+header img {
+  margin: 5vh;
+}
+
+hr {
+  background-color: black;
+  margin: 30px auto;
+  width: 80%;
+  height: 2px;
+}
+
+section {
+  width: 20%;
+  display: inline-block;
+  margin: 5vh 6vw;
+}
+
+footer {
+  text-align: center;
+}
