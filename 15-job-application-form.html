@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="15-styles.css" />
     <title>Job Application Form</title>
   </head>
+
   <body>
     <div class="container">
       <h1>Job Application Form</h1>
@@ -35,7 +36,7 @@
           <option value="designer">Designer</option>
           <option value="manager">Manager</option>
         </select>
-        <fieldset class="box1">
+        <fieldset class="radio-group">
           <legend>Availability:</legend>
           <input
             type="radio"
@@ -54,6 +55,7 @@
         </fieldset>
         <label for="demand">Why do you want this job?</label>
         <textarea
+          id="message"
           class="input1"
           name="demand"
           id="demand"
@@ -61,7 +63,7 @@
           placeholder="Write your motivation"
           required
         ></textarea>
-        <input class="submit1" type="submit" value="Submit Application" />
+        <button class="submit1" type="submit">Submit Application</button>
       </form>
     </div>
   </body>

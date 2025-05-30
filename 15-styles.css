@@ -34,26 +34,46 @@ body {
   box-sizing: border-box;
   border-radius: 5px;
 }
-
-.input1:required {
+input:focus,
+textarea:focus {
+  outline: 2px solid yellow;
+  border-color: white;
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
   border: 1px solid red;
 }
 
-.input1:valid {
+input:valid,
+select:valid,
+textarea:valid {
   border: 1px solid green;
 }
 
-.box1 {
+input:first-of-type {
+  background-color: white;
+}
+
+.radio-group {
   padding: 1.5rem;
   margin: 1.5vh;
 }
-.box1 label {
+.radio-group label {
   font-weight: normal;
 }
-.box1 input[type="radio"] {
-  accent-color: green;
+
+.radio-group input[type="radio"] {
+  outline: none;
 }
-.box1 input[type="radio"]:checked + label {
+
+.radio-group input[type="radio"]:checked {
+  accent-color: green;
+  border-color: green;
+  background-color: green;
+  box-shadow: none;
+}
+.radio-group input[type="radio"]:checked + label {
   color: green;
 }
 
@@ -66,6 +86,6 @@ body {
   border-radius: 5px;
   font-size: 1em;
 }
-.submit1:hover {
+button:hover {
   background-color: black;
 }
