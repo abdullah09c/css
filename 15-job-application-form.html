@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="15-styles.css" />
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Job Application Form</h1>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input
+          class="input1"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          class="input1"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label for="position">Position:</label>
+        <select class="input1" name="position" id="position" required>
+          <option value="" selected>Select a position</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="manager">Manager</option>
+        </select>
+        <fieldset class="box1">
+          <legend>Availability:</legend>
+          <input
+            type="radio"
+            name="availability"
+            id="full-time"
+            value="full-time"
+          />
+          <label for="full-time">Full-Time</label>
+          <input
+            type="radio"
+            name="availability"
+            id="part-time"
+            value="part-time"
+          />
+          <label for="part-time">Part-Time</label>
+        </fieldset>
+        <label for="demand">Why do you want this job?</label>
+        <textarea
+          class="input1"
+          name="demand"
+          id="demand"
+          rows="5"
+          placeholder="Write your motivation"
+          required
+        ></textarea>
+        <input class="submit1" type="submit" value="Submit Application" />
+      </form>
+    </div>
+  </body>
+</html>
