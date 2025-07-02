@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="16-styles.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="#" method="post">
+      <fieldset>
+        <label for="first-name">Enter Your First Name:</label>
+        <input
+          class="input1"
+          type="text"
+          name="first-name"
+          id="first-name"
+          required
+        />
+        <label for="last-name">Enter Your Last Name:</label>
+        <input
+          class="input1"
+          type="text"
+          name="last-name"
+          id="last-name"
+          required
+        />
+        <label for="email">Enter Your Email:</label>
+        <input class="input1" type="email" name="email" id="email" required />
+        <label for="new-password">Create a New Password:</label>
+        <input
+          class="input1"
+          type="password"
+          name="new-password"
+          id="new-password"
+          pattern="[a-z0-5]{8,}"
+          required
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Account type(required)</legend>
+        <div class="input2">
+          <input type="radio" name="ac_type" id="personal" value="personal" />
+          <label for="personal">Personal</label>
+          <br />
+          <br />
+          <input type="radio" name="ac_type" id="business" value="business" />
+          <label for="business">Business</label>
+        </div>
+      </fieldset>
+      <fieldset id="f3">
+        <label for="photo">Upload a profile picture:</label>
+        <input class="input1" type="file" name="photo" id="photo" />
+        <label for="age">Input your age (years): </label>
+        <input class="input1" type="number" name="age" id="age" />
+        <label for="get_info">How did you hear about us?</label>
+        <select class="input1" name="get_info" id="get_info">
+          <option value="" selected>(select one)</option>
+          <option value="news">freeCodeCamp News</option>
+          <option value="youtube">freeCodeCamp YouTube Channel</option>
+          <option value="forum">freeCodeCamp Forum</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="bio">Provide a bio:</label>
+        <textarea
+          class="input1"
+          name="bio"
+          id="bio"
+          placeholder="I like coding on the beach..."
+        ></textarea>
+      </fieldset>
+      <input type="checkbox" name="terms" id="terms" />
+      <label for="terms"
+        >I accept the <a href="#">terms and conditions</a></label
+      >
+      <br />
+      <input id="submit1" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
