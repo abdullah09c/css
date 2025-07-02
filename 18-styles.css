@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 244px;
+    
+
+}
+#email{
+    
+    border: 2px solid black;
+    width: 500px;
+    /* height: 500px; */
+    box-shadow: 5px 5px 2px 0px gray;
+    padding: 50px;
+    background-color: #FFF5EE;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+p{
+    display: block;
+    width: 400px;
+    padding: 0.5vh 2em;
+}
+
+#confidential{
+    display: inline-block;
+    position: relative;
+    left: 130px;
+    top: 25px;
+    border: 5px solid red;
+    color: red;
+    padding: 5px;
+    transform: rotateZ(-20deg);
+    margin-left: 1px;
+}
+#top-secret{
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    bottom: 10px;
+    border: 5px solid red;
+    color: red;
+    padding: 5px;
+    transform: rotateZ(20deg);
+    margin-left: 1px;
+}
+
+.blurred{
+    filter: blur(3px);
+}
+
+@media only screen and (min-width:300px) and (max-width:450px){
+    body{
+        scale: .8;
+    }
+}
