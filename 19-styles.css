@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #d8bfd8;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin: 5% 0;
+}
+
+.card {
+  display: flex;
+  background: #fff;
+  width: 20em;
+  height: 30em;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.center {
+  margin: auto 7em;
+  scale: 5;
+}
+.center2 {
+    margin: auto;
+}
+
+
+.left .child {
+    scale: 2;
+    margin: 1em;
+    font-weight:800;
+}
+
+.right .child{
+    scale: 2;
+    margin: 1em;
+    font-weight:800;
+    transform: rotateZ(180deg);
+    position: relative;
+    top: 80%;
+}
+
+.red {
+    color: red;
+}
+
+.rotate{
+    transform: rotateZ(180deg);
+}
+.shape2{
+    display: inline-block;
+    padding: 2em 1em;
+    scale: 5;
+
+}
+.shape3{
+    display: inline-block;
+    padding: 4em 1.5em;
+    scale: 5;
+
+}
+
+
+.special {
+    position: relative;
+    left: 25%;
+}
