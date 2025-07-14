@@ -1,0 +1,267 @@
+:root {
+  --white: #f0f0f0;
+  --blue: #45567d;
+  --gray: #303841;
+  --black: #222225;
+  --red: #be3144;
+  --orange: #ff7f50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--white);
+  font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  background-color: var(--black);
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: var(--red);
+  position: fixed;
+  top: 0;
+  height: 5vw;
+  width: 100vw;
+  text-align: right;
+  border-bottom: 1px solid black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  padding: 1rem;
+  height: 5vw;
+  transition: background-color 0.3s ease-out;
+  margin-right: 1.5rem;
+}
+
+nav a {
+  font-size: clamp(1.1rem, 0.9857rem + 0.5714vw, 1.5rem);
+}
+
+nav li:hover {
+  background-color: var(--blue);
+}
+
+main {
+  margin-top: 5rem;
+}
+
+#about {
+  height: 95vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#about h1 {
+  font-size: clamp(2rem, 1.7143rem + 1.4286vw, 3rem);
+}
+
+#about em {
+  font-size: clamp(1.2rem, 1.1143rem + 0.4286vw, 1.5rem);
+  color: var(--red);
+}
+
+#work {
+  background-color: var(--blue);
+  text-align: center;
+  padding: 3rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#work h2 {
+  display: inline-block;
+  border-bottom: 2px solid var(--white);
+  font-size: clamp(1.5rem, 1.1571rem + 1.7143vw, 2.7rem);
+  margin: 4rem;
+}
+
+.container {
+  display: grid;
+  width: 90vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "row1 row1 row1"
+    "row2 row2 row2";
+  gap: 30px;
+}
+
+.item {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 1px solid #000;
+  background-color: var(--gray);
+  cursor: pointer;
+}
+
+.item img {
+  height: 85%;
+  object-fit: cover;
+}
+
+.item div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+}
+
+.item p::before {
+  content: "< ";
+  color: var(--orange);
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.item p::after {
+  content: " />";
+  opacity: 0;
+  color: var(--orange);
+  transition: all 0.3s ease-out;
+}
+
+.item:hover p::before {
+  opacity: 1;
+}
+.item:hover p::after {
+  opacity: 1;
+}
+
+#work button {
+  margin-top: 4rem;
+  padding: 10px 25px;
+  font-size: clamp(1rem, 0.8857rem + 0.5714vw, 1.4rem);
+  color: var(--white);
+  background-color: var(--gray);
+  border: none;
+  transition: background-color 0.3s ease-out;
+}
+
+#work button:hover {
+  background-color: var(--red);
+}
+
+#contact {
+  height: 95vh;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid var(--red)
+}
+
+#contact h2 {
+  font-size: clamp(1.8rem, 1.4571rem + 1.7143vw, 3rem);
+}
+
+#contact em {
+  margin-top: 10px;
+  margin-bottom: 4rem;
+}
+#contact ul {
+  font-size: clamp(1.2rem, 1.0857rem + 0.5714vw, 1.6rem);
+}
+
+#contact li {
+  padding: 20px;
+  transition: all 0.3s ease-out;
+}
+
+#contact li:hover{
+    transform: translateY(8px);
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--gray);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 1080px) {
+  nav {
+    height: 7vw;
+  }
+  nav li {
+    height: 7vw;
+  }
+  footer{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    height: 15vw;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  nav li {
+    padding: 1.3rem 1rem;
+    margin-right: 0;
+    height: 15vw;
+  }
+  #about {
+    height: 95vh;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "row1"
+      "row1"
+      "row1"
+      "row1"
+      "row1"
+      "row1";
+    width: 75vw;
+  }
+  .item {
+    width: 100%;
+  }
+  #contact li{
+    display: block;
+  }
+  #contact li:hover{
+    transform: translateX(8px);
+  }
+}
